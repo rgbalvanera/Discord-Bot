@@ -3,7 +3,7 @@ import os
 def handle_user_messages(msg) ->str:
     message = msg.lower() #Converts all inputs to lower case
     if(message == 'hi'):
-        return 'Hi there'
+        return 'meow'
     if(message =="hello"):
         return "Hello user. Welcome"
 
@@ -15,7 +15,6 @@ async def processMessage(message, user_message):
         print(error)
 
 def runBot():
-    discord_token = 'MTE0MjAyNTYyNDkzMjg0MzU5MA.GAvF0I.ZRAgSRHz6YlEaIek2y5dyvybJJTc7Jhr10hI2E'
     client = discord.Client(intents=discord.Intents.default())
 
     @client.event
